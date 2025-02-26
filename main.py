@@ -39,6 +39,7 @@ def helper(dis):
     die = [die for die in die.values]
 
     wrkout = workout[workout['disease'] == dis] ['workout']
+    wrkout = [wrkout for wrkout in wrkout.values]
 
 
     return desc,pre,med,die,wrkout
